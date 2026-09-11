@@ -12,7 +12,7 @@ export default function AboutTeaser() {
       <div
         className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 opacity-5 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at right, #C8A96E 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at right, #FCA311 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />

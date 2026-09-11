@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         gold: {
-          DEFAULT: '#C8A96E',
-          light: '#DFC08A',
-          dark: '#A8893E',
+          DEFAULT: '#FCA311',
+          light: '#FFBB33',
+          dark: '#D88A0C',
         },
         dark: {
           DEFAULT: '#0A0A0A',
@@ -62,11 +62,11 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gold-shimmer': 'linear-gradient(90deg, transparent 0%, rgba(200,169,110,0.15) 50%, transparent 100%)',
+        'gold-shimmer': 'linear-gradient(90deg, transparent 0%, rgba(252,163,17,0.15) 50%, transparent 100%)',
       },
       boxShadow: {
-        'gold': '0 0 0 1px rgba(200,169,110,0.3)',
-        'gold-lg': '0 8px 32px rgba(200,169,110,0.15)',
+        'gold': '0 0 0 1px rgba(252,163,17,0.3)',
+        'gold-lg': '0 8px 32px rgba(252,163,17,0.15)',
         'card': '0 4px 24px rgba(0,0,0,0.4)',
       },
       transitionTimingFunction: {

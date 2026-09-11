@@ -39,7 +39,7 @@ export default function Services() {
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                'radial-gradient(ellipse at 20% 60%, rgba(200,169,110,0.06) 0%, transparent 55%)',
+                'radial-gradient(ellipse at 20% 60%, rgba(252,163,17,0.06) 0%, transparent 55%)',
             }}
             aria-hidden="true"
           />

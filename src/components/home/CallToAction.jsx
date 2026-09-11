@@ -16,7 +16,7 @@ export default function CallToAction() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 50%, rgba(200,169,110,0.08) 0%, transparent 65%)',
+            'radial-gradient(ellipse at 50% 50%, rgba(252,163,17,0.08) 0%, transparent 65%)',
         }}
         aria-hidden="true"
       />

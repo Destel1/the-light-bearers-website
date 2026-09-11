@@ -25,7 +25,7 @@ export default function About() {
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                'radial-gradient(ellipse at 30% 50%, rgba(200,169,110,0.06) 0%, transparent 60%)',
+                'radial-gradient(ellipse at 30% 50%, rgba(252,163,17,0.06) 0%, transparent 60%)',
             }}
             aria-hidden="true"
           />

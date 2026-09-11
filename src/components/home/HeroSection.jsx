@@ -18,7 +18,7 @@ export default function HeroSection() {
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] opacity-10"
           style={{
-            background: 'radial-gradient(ellipse at center, #C8A96E 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at center, #FCA311 0%, transparent 70%)',
           }}
           aria-hidden="true"
         />
@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div
           className="absolute bottom-0 left-0 w-[500px] h-[500px] opacity-5"
           style={{
-            background: 'radial-gradient(ellipse at bottom left, #C8A96E 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse at bottom left, #FCA311 0%, transparent 65%)',
           }}
           aria-hidden="true"
         />
