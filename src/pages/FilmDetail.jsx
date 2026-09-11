@@ -152,9 +152,6 @@ export default function FilmDetail() {
                       <p className="text-text-subtle text-sm font-heading">
                         Trailer coming soon
                       </p>
-                      <p className="text-text-subtle text-xs italic">
-                        [Replace <code className="text-gold/50">trailer: null</code> with a YouTube embed URL in films.js]
-                      </p>
                     </div>
                   </AnimatedSection>
                 )}
@@ -238,11 +235,6 @@ export default function FilmDetail() {
                         </ul>
                       </div>
                     )}
-
-                    {/* Placeholder note */}
-                    <p className="text-text-subtle text-[10px] italic border-t border-dark-border pt-4">
-                      Credits above are demo placeholders. Replace in <code className="text-gold/50">src/data/films.js</code>.
-                    </p>
                   </div>
                 </AnimatedSection>
               </aside>

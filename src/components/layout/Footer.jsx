@@ -84,14 +84,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-
-            {/* Contact placeholder */}
-            <div className="mt-5 flex items-center gap-2 text-text-muted text-sm">
-              <Mail size={14} className="text-gold flex-shrink-0" />
-              <span className="italic text-text-subtle">
-                [email@placeholder.com — replace with actual email]
-              </span>
-            </div>
           </div>
 
           {/* Nav columns */}

@@ -139,50 +139,6 @@ export default function Contact() {
               {/* Contact info */}
               <AnimatedSection direction="left" className="lg:col-span-1">
                 <div className="space-y-8">
-                  <div>
-                    <h2 className="font-heading font-bold text-text-primary text-sm tracking-widest uppercase mb-6 flex items-center gap-3">
-                      <span className="gold-line" aria-hidden="true" />
-                      Contact Details
-                    </h2>
-                    <div className="space-y-5">
-                      {/* Email placeholder */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-9 h-9 rounded bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <Mail size={15} className="text-gold" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="font-heading font-semibold text-text-primary text-xs uppercase tracking-wide mb-0.5">
-                            Email
-                          </p>
-                          <p className="text-text-muted text-sm italic">
-                            [email@placeholder.com]
-                          </p>
-                          <p className="text-text-subtle text-xs mt-0.5">
-                            Replace with actual email address
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Location placeholder */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-9 h-9 rounded bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <MapPin size={15} className="text-gold" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="font-heading font-semibold text-text-primary text-xs uppercase tracking-wide mb-0.5">
-                            Location
-                          </p>
-                          <p className="text-text-muted text-sm italic">
-                            [City, Country — Placeholder]
-                          </p>
-                          <p className="text-text-subtle text-xs mt-0.5">
-                            Replace with actual location
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                   {/* Enquiry types */}
                   <div className="p-6 bg-dark-surface rounded border border-dark-border">
                     <h3 className="font-heading font-semibold text-text-primary text-xs uppercase tracking-widest mb-4">
@@ -203,16 +159,6 @@ export default function Contact() {
                         </li>
                       ))}
                     </ul>
-                  </div>
-
-                  {/* Formspree note */}
-                  <div className="p-4 bg-dark-surface rounded border border-dark-border/50">
-                    <p className="text-text-subtle text-xs leading-relaxed italic">
-                      <strong className="text-text-muted not-italic">Developer note:</strong> This
-                      form is wired for Formspree. Replace the endpoint in{' '}
-                      <code className="text-gold/60">Contact.jsx</code> with your actual Formspree
-                      form ID to activate email delivery.
-                    </p>
                   </div>
                 </div>
               </AnimatedSection>
