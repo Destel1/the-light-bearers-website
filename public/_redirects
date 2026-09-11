@@ -1,1 +1,4 @@
-/* /index.html 200
+# SPA routing is handled by wrangler.toml (assets.not_found_handling = "single-page-application").
+# The previous rule "/* /index.html 200" caused Cloudflare error 100324 (infinite loop)
+# because the catch-all matched index.html itself on the Workers runtime.
+# No redirect rules are needed here.
