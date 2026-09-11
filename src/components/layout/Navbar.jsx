@@ -52,15 +52,14 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+          className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
           aria-label="The Light Bearers Film Production — Home"
         >
-          <span className="font-display font-bold text-gold text-sm sm:text-base tracking-widest uppercase">
-            The Light Bearers
-          </span>
-          <span className="font-heading text-text-muted text-[10px] sm:text-xs tracking-[0.2em] uppercase">
-            Film Production
-          </span>
+          <img
+            src="/images/logo.jpg"
+            alt="The Light Bearers Film Production"
+            className="h-12 sm:h-14 md:h-16 w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}

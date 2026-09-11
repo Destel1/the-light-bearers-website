@@ -267,18 +267,8 @@ export default function About() {
                     src={founder.photo}
                     alt={founder.photoAlt}
                     loading="lazy"
-                    className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                    className="w-full h-full object-cover relative z-10"
                   />
-                  {/* Fallback */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-dark-alt to-dark flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-20 h-20 rounded-full border-2 border-gold/30 flex items-center justify-center mx-auto mb-3">
-                        <span className="text-gold/50 text-2xl font-display font-bold">PD</span>
-                      </div>
-                      <p className="text-text-subtle text-xs">Photo Coming Soon</p>
-                    </div>
-                  </div>
                 </div>
                 <div className="text-center mt-6">
                   <h3 className="font-heading font-bold text-text-primary text-xl mb-1">

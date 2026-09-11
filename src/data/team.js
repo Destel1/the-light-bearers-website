@@ -8,7 +8,7 @@
 export const founder = {
   name: 'Pefoufe Destel',
   role: 'CEO, Director, Writer, Trainer & Producer',
-  photo: '/images/team/destel.jpg',
+  photo: '/images/me.jpg',
   photoAlt: 'Pefoufe Destel — Founder, CEO, Director, Writer, Trainer and Producer',
   bio: `Pefoufe Destel is the founder and creative vision behind The Light Bearers Film Production.
 His journey began through school drama and deepened in 2016 when, at a youth camp at GTHS Canada in Bamenda, he encountered Beautiful Feet Films and Drama Missions and watched a drama titled "TOO LATE TO CRY." That encounter set something in motion.
@@ -28,7 +28,7 @@ export const team = [
     name: 'Pefoufe Destel',
     role: 'CEO, Director, Writer, Trainer & Producer',
     bio: 'Founder of The Light Bearers Film Production. Filmmaker, trainer and creative visionary committed to using storytelling as a tool for Kingdom expansion.',
-    photo: '/images/team/destel.jpg',
+    photo: '/images/me.jpg',
     photoAlt: 'Pefoufe Destel — Founder and CEO',
   },
   // Add more team members here as the company grows.

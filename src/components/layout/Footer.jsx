@@ -56,12 +56,11 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded">
-              <p className="font-display font-bold text-gold text-lg tracking-widest uppercase">
-                The Light Bearers
-              </p>
-              <p className="font-heading text-text-muted text-xs tracking-[0.2em] uppercase mt-0.5">
-                Film Production
-              </p>
+              <img
+                src="/images/logo.jpg"
+                alt="The Light Bearers Film Production"
+                className="h-16 w-auto"
+              />
             </Link>
             <p className="font-display italic text-gold/70 text-sm mb-4 leading-relaxed">
               "For we walk by faith, not by sight."
