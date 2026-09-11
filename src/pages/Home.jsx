@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        description="The Light Bearers Film Production — We Walk by Faith not by Sight. A creative film production company of young, vibrant storytellers focused on filmmaking, youth empowerment, and cultural expression."
+        description="The Light Bearers Film Production — A Christian film and creative production company committed to using storytelling to transform hearts and minds for Kingdom expansion. For we walk by faith, not by sight."
         canonicalPath="/"
       />
       {/* Hero has its own full-screen treatment — no PageWrapper needed */}

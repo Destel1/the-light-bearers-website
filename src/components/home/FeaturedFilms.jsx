@@ -8,6 +8,11 @@ import AnimatedSection from '../shared/AnimatedSection.jsx'
 export default function FeaturedFilms() {
   const featured = getFeaturedFilms()
 
+  // Don't render section at all if there are no featured films yet
+  if (!featured || featured.length === 0) {
+    return null
+  }
+
   return (
     <section className="section-padding bg-dark" aria-labelledby="featured-films-heading">
       <div className="container-site">

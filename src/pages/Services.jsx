@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import {
-  Clapperboard, Film, Music, Briefcase, PenLine, Users, ArrowRight, CheckCircle2,
+  Clapperboard, Film, Music, Briefcase, PenLine, Users, Theater, Building2,
+  ArrowRight, CheckCircle2,
 } from 'lucide-react'
 import SEOHead from '../components/shared/SEOHead.jsx'
 import PageWrapper from '../components/layout/PageWrapper.jsx'
@@ -15,6 +16,8 @@ const iconMap = {
   Briefcase,
   PenLine,
   Users,
+  Theater,
+  Building2,
 }
 
 export default function Services() {
@@ -22,7 +25,7 @@ export default function Services() {
     <>
       <SEOHead
         title="Services"
-        description="The Light Bearers Film Production offers full-service film production, documentary production, music video production, scriptwriting, corporate video, and youth storytelling workshops."
+        description="The Light Bearers Film Production offers film production, drama ministry, creative training, story development, music video production, and is building towards a full creative ecosystem."
         canonicalPath="/services"
       />
       <PageWrapper>
@@ -54,9 +57,9 @@ export default function Services() {
                 <span className="text-gold-gradient">Services</span>
               </h1>
               <p className="text-text-muted text-lg leading-relaxed max-w-2xl">
-                From full-length feature films to corporate brand stories and youth empowerment
-                workshops — we bring cinematic quality and creative intentionality to every project
-                we take on.
+                From film production to creative training and drama ministry — we serve through
+                storytelling, discipleship and the development of Christian creatives. Each
+                service reflects our commitment to Kingdom expansion through excellence in craft.
               </p>
             </AnimatedSection>
           </div>
@@ -82,7 +85,7 @@ export default function Services() {
                           <Icon size={22} className="text-gold" aria-hidden="true" />
                         </div>
                         <span className="font-heading font-semibold text-gold text-[11px] tracking-widest uppercase">
-                          Service
+                          {service.future ? 'Future Vision' : 'Service'}
                         </span>
                       </div>
 
@@ -150,7 +153,7 @@ export default function Services() {
               eyebrow="How We Work"
               title="Our Creative"
               titleAccent="Process"
-              subtitle="Every project is different, but our approach is always the same — intentional, collaborative, and craft-led."
+              subtitle="Every project is different, but our approach remains grounded in discernment, excellence and Kingdom purpose."
               align="center"
               headingLevel={2}
               className="mb-16"
@@ -158,10 +161,10 @@ export default function Services() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { step: '01', title: 'Discovery', desc: 'We listen. We ask questions. We understand your story, your goals, and your audience before anything else.' },
-                { step: '02', title: 'Development', desc: 'Scripts, storyboards, locations, casting — we build the creative blueprint that will guide every day of production.' },
-                { step: '03', title: 'Production', desc: 'Cameras roll. This is where the story comes to life — with precision, creativity, and a commitment to the vision.' },
-                { step: '04', title: 'Delivery', desc: 'Edited, graded, mixed, and mastered. We deliver a finished product ready for its audience — wherever that may be.' },
+                { step: '01', title: 'Discernment', desc: 'We begin with prayer and listening — understanding the story God wants told and the audience He wants reached.' },
+                { step: '02', title: 'Development', desc: 'Scripts, storyboards, locations, casting — building the creative blueprint with intention and excellence.' },
+                { step: '03', title: 'Production', desc: 'Cameras roll. The story comes to life through performance, direction, cinematography and a commitment to the vision.' },
+                { step: '04', title: 'Delivery', desc: 'Edited, graded, mixed and mastered — finished work ready to carry the Light to its audience, wherever that may be.' },
               ].map(({ step, title, desc }, i) => (
                 <AnimatedSection key={step} delay={i * 0.12}>
                   <div className="relative text-center">
@@ -183,12 +186,12 @@ export default function Services() {
           <div className="container-site text-center">
             <AnimatedSection>
               <h2 className="font-display font-bold text-display-md text-white mb-4">
-                Ready to start your{' '}
-                <span className="text-gold-gradient">project?</span>
+                Have a story to tell for{' '}
+                <span className="text-gold-gradient">Kingdom impact?</span>
               </h2>
               <p className="text-text-muted mb-8 max-w-xl mx-auto">
-                Reach out to discuss your production needs. We'll respond with ideas, questions,
-                and genuine enthusiasm for your story.
+                Reach out to discuss your production needs, training enquiries or partnership
+                opportunities. We'll respond with genuine enthusiasm for your vision.
               </p>
               <Link to="/contact" className="btn-primary px-10 py-4">
                 Start a Conversation <ArrowRight size={15} aria-hidden="true" />

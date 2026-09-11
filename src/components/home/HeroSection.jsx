@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection() {
   const videoRef = useRef(null)
@@ -11,9 +11,8 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       aria-label="Hero — The Light Bearers Film Production"
     >
-      {/* Background — cinematic gradient (replace with actual hero image/video) */}
+      {/* Background — cinematic gradient */}
       <div className="absolute inset-0 z-0">
-        {/* Layered gradient simulating a cinematic backdrop */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] via-[#111008] to-[#0A0A0A]" />
         {/* Radial gold glow — top center */}
         <div
@@ -41,12 +40,6 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Placeholder hero image note */}
-      {/* PLACEHOLDER: Replace the gradient background above with an actual hero image or video.
-          Suggested: A dramatic production still or cinematic landscape.
-          Example: <img src="/images/hero-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-          Then add a cinematic-overlay div on top for the gradient fade. */}
-
       {/* Content */}
       <div className="relative z-10 container-site text-center px-4">
         {/* Eyebrow */}
@@ -58,7 +51,7 @@ export default function HeroSection() {
         >
           <span className="gold-line" aria-hidden="true" />
           <span className="font-heading text-gold text-xs tracking-[0.3em] uppercase">
-            Est. — Film Production
+            A Christian Film Production Company
           </span>
           <span className="gold-line" aria-hidden="true" />
         </motion.div>
@@ -92,25 +85,34 @@ export default function HeroSection() {
           aria-hidden="true"
         />
 
-        {/* Slogan */}
+        {/* Motto — 2 Corinthians 5:7 */}
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7 }}
-          className="font-display italic text-gold/80 text-xl sm:text-2xl md:text-3xl mb-12 max-w-2xl mx-auto leading-snug"
+          className="font-display italic text-gold/80 text-xl sm:text-2xl md:text-3xl mb-3 max-w-2xl mx-auto leading-snug"
         >
-          "We Walk by Faith not by Sight."
+          "For we walk by faith, not by sight."
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="text-text-subtle text-xs tracking-widest uppercase mb-12"
+        >
+          2 Corinthians 5:7
         </motion.p>
 
         {/* CTA buttons */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.85 }}
+          transition={{ duration: 0.7, delay: 0.9 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Link to="/films" className="btn-primary text-sm px-8 py-3.5">
-            View Our Films
+            Our Productions
             <ArrowRight size={15} aria-hidden="true" />
           </Link>
           <Link to="/about" className="btn-secondary text-sm px-8 py-3.5">

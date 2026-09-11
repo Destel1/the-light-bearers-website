@@ -64,11 +64,11 @@ export default function Footer() {
               </p>
             </Link>
             <p className="font-display italic text-gold/70 text-sm mb-4 leading-relaxed">
-              "We Walk by Faith not by Sight."
+              "For we walk by faith, not by sight."
             </p>
             <p className="text-text-muted text-sm leading-relaxed max-w-sm">
-              A creative film production company made up of young, vibrant youths — 
-              focused on filmmaking, storytelling, youth empowerment, and cultural expression.
+              A Christian film and creative production company committed to using the power of
+              storytelling to transform hearts and minds for Kingdom expansion.
             </p>
 
             {/* Social links */}
@@ -125,7 +125,7 @@ export default function Footer() {
             © {year} The Light Bearers Film Production. All rights reserved.
           </p>
           <p className="text-text-subtle text-xs font-body italic">
-            "We Walk by Faith not by Sight."
+            "For we walk by faith, not by sight."
           </p>
         </div>
       </div>

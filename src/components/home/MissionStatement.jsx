@@ -3,21 +3,21 @@ import AnimatedSection from '../shared/AnimatedSection.jsx'
 const pillars = [
   {
     number: '01',
-    title: 'Storytelling',
+    title: 'Who We Are',
     description:
-      'Every frame tells a story. We craft narratives that move, challenge, and inspire — rooted in the richness of African culture and the universal human experience.',
+      'The Light Bearers Film Production is a Christian film and creative production company committed to using storytelling to transform hearts and minds for Kingdom expansion.',
   },
   {
     number: '02',
-    title: 'Youth Empowerment',
+    title: 'Our Vision',
     description:
-      'Young people are not the future — they are the present. We build platforms, skills, and opportunities for the next generation of African storytellers.',
+      'To be a beacon of Light, transforming lives for better communities.',
   },
   {
     number: '03',
-    title: 'Cultural Expression',
+    title: 'Our Mission',
     description:
-      'Our films are a celebration of identity. We honour tradition while embracing the bold, contemporary voices that are reshaping African cinema on the world stage.',
+      "Transforming hearts and minds, reflecting on God's love, truth and redemption for Kingdom expansion.",
   },
 ]
 
@@ -29,20 +29,20 @@ export default function MissionStatement() {
         <AnimatedSection className="text-center max-w-4xl mx-auto mb-20">
           <span className="inline-flex items-center gap-3 font-heading text-gold text-xs tracking-[0.3em] uppercase mb-6">
             <span className="gold-line" aria-hidden="true" />
-            Our Mission
+            Our Foundation
             <span className="gold-line" aria-hidden="true" />
           </span>
           <h2
             id="mission-heading"
             className="font-display font-bold text-display-lg text-text-primary leading-tight mb-6"
           >
-            Meaningful stories that{' '}
-            <span className="text-gold-gradient">illuminate</span> the human spirit.
+            Stories that carry{' '}
+            <span className="text-gold-gradient">the Light.</span>
           </h2>
           <p className="text-text-muted text-base md:text-lg leading-relaxed">
-            The Light Bearers Film Production is a creative company made up of young, vibrant
-            youths dedicated to producing visual stories that matter — stories of faith, identity,
-            resilience, and hope that resonate across cultures and across borders.
+            We create films and visual stories that reflect God's love, truth and redemption —
+            bringing faith into meaningful conversations about life, identity, struggle,
+            relationships, culture and the human experience.
           </p>
         </AnimatedSection>
 

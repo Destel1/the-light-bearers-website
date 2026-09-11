@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 const SITE_NAME = 'The Light Bearers Film Production'
 const DEFAULT_DESCRIPTION =
-  'The Light Bearers Film Production — a creative film production company of young, vibrant storytellers. Focused on filmmaking, youth empowerment, and cultural expression.'
+  'The Light Bearers Film Production — A Christian film and creative production company committed to using storytelling to transform hearts and minds for Kingdom expansion.'
 const DEFAULT_OG_IMAGE = '/images/og-default.jpg' // Replace with actual OG image
 
 export default function SEOHead({

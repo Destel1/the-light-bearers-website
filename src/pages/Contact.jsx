@@ -17,12 +17,11 @@ const FORM_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID'
 
 const subjects = [
   'Film Production Enquiry',
+  'Drama Ministry Enquiry',
   'Music Video Production',
-  'Documentary Production',
-  'Corporate Video',
-  'Youth Workshop Enquiry',
+  'Creative Training / Workshops',
+  'Story Development / Scriptwriting',
   'Collaboration / Partnership',
-  'Casting Enquiry',
   'General Enquiry',
 ]
 
@@ -93,7 +92,7 @@ export default function Contact() {
     <>
       <SEOHead
         title="Contact"
-        description="Get in touch with The Light Bearers Film Production. Enquire about film production, music videos, workshops, collaborations, and more."
+        description="Get in touch with The Light Bearers Film Production. Enquire about film production, drama ministry, creative training, collaborations and more."
         canonicalPath="/contact"
       />
       <PageWrapper>
@@ -125,8 +124,8 @@ export default function Contact() {
                 <span className="text-gold-gradient">Touch</span>
               </h1>
               <p className="text-text-muted text-lg leading-relaxed">
-                Have a project, a story, or just want to connect? We'd love to hear from you.
-                Fill in the form and we'll get back to you as soon as possible.
+                Have a project, a story, or a question? We'd love to hear from you. Fill in the
+                form and we'll get back to you as soon as possible.
               </p>
             </AnimatedSection>
           </div>
@@ -191,11 +190,11 @@ export default function Contact() {
                     </h3>
                     <ul className="space-y-2">
                       {[
-                        'Film production enquiries',
+                        'Film & drama production enquiries',
                         'Collaboration proposals',
-                        'Casting & talent enquiries',
-                        'Workshop bookings',
-                        'Festival & distribution',
+                        'Creative training & workshops',
+                        'Music video production',
+                        'Story development',
                         'Partnership opportunities',
                       ].map((item) => (
                         <li key={item} className="flex items-center gap-2 text-text-muted text-xs">

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 import SEOHead from '../components/shared/SEOHead.jsx'
 import PageWrapper from '../components/layout/PageWrapper.jsx'
 import SectionHeading from '../components/ui/SectionHeading.jsx'
@@ -15,8 +17,8 @@ export default function Films() {
   return (
     <>
       <SEOHead
-        title="Films"
-        description="Browse the complete catalogue of productions from The Light Bearers Film Production — short films, documentaries, music videos, and features."
+        title="Productions"
+        description="Browse the catalogue of films, dramas and visual works from The Light Bearers Film Production — stories created to carry the Light."
         canonicalPath="/films"
       />
       <PageWrapper>
@@ -44,11 +46,12 @@ export default function Films() {
                 id="films-hero-heading"
                 className="font-display font-black text-display-xl text-white mb-4 leading-none"
               >
-                Our <span className="text-gold-gradient">Films</span>
+                Our <span className="text-gold-gradient">Productions</span>
               </h1>
               <p className="text-text-muted text-lg max-w-2xl leading-relaxed">
-                Every production is a story told with intention. Browse our growing catalogue of
-                short films, documentaries, music videos, and feature films.
+                Films, dramas and visual stories created to carry the Light. Each production is
+                developed with intention, crafted with care, and designed to stay with its
+                audience long after the screen goes dark.
               </p>
             </AnimatedSection>
           </div>
@@ -93,22 +96,30 @@ export default function Films() {
           aria-label={`Films: ${activeFilter}`}
         >
           <div className="container-site">
-            <FilmGrid
-              films={filtered}
-              emptyMessage={`No ${activeFilter} productions found yet.`}
-            />
-
-            {/* Disclaimer note */}
-            <AnimatedSection delay={0.2}>
-              <div className="mt-16 p-6 bg-dark-surface rounded border border-dark-border/50">
-                <p className="text-text-subtle text-xs font-body italic text-center">
-                  <strong className="text-text-muted not-italic">Demo Content:</strong> All film
-                  entries above are fictional placeholder samples used to demonstrate the website
-                  structure. They will be replaced with actual productions from The Light Bearers
-                  Film Production.
-                </p>
-              </div>
-            </AnimatedSection>
+            {filtered.length === 0 && films.length === 0 ? (
+              <AnimatedSection className="py-20 text-center">
+                <div className="max-w-lg mx-auto">
+                  <div className="w-16 h-16 rounded-full border-2 border-gold/30 flex items-center justify-center mx-auto mb-6">
+                    <span className="text-gold/50 text-2xl font-display font-bold">TLB</span>
+                  </div>
+                  <h3 className="font-heading font-bold text-text-primary text-xl mb-3">
+                    Productions Coming Soon
+                  </h3>
+                  <p className="text-text-muted text-base leading-relaxed mb-6">
+                    The Light Bearers Film Production is developing new work. Our films and
+                    productions will appear here as they become available.
+                  </p>
+                  <Link to="/about" className="btn-secondary text-sm">
+                    Learn About Our Vision <ArrowRight size={14} aria-hidden="true" />
+                  </Link>
+                </div>
+              </AnimatedSection>
+            ) : (
+              <FilmGrid
+                films={filtered}
+                emptyMessage={`No ${activeFilter} productions found yet.`}
+              />
+            )}
           </div>
         </section>
 

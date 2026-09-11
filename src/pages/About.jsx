@@ -4,37 +4,14 @@ import SEOHead from '../components/shared/SEOHead.jsx'
 import PageWrapper from '../components/layout/PageWrapper.jsx'
 import SectionHeading from '../components/ui/SectionHeading.jsx'
 import AnimatedSection from '../components/shared/AnimatedSection.jsx'
-import { team, milestones } from '../data/team.js'
-
-const values = [
-  {
-    title: 'Faith',
-    description:
-      'Our work is anchored in the belief that we are called to something greater than ourselves. Every film we make is an act of faith — faith in the power of story, in our team, and in the audience who will receive it.',
-  },
-  {
-    title: 'Authenticity',
-    description:
-      'We tell stories that are true — not just factually, but emotionally and culturally. We resist the temptation to sanitise or exoticise the African experience. We tell it as it is, with all its complexity and beauty.',
-  },
-  {
-    title: 'Excellence',
-    description:
-      'Being young and independent is not an excuse for low standards. We hold ourselves to an international benchmark of craft — in cinematography, in writing, in performance, and in everything we put our name on.',
-  },
-  {
-    title: 'Community',
-    description:
-      'Film is a collaborative art. We invest in the people around us — our team, our collaborators, and the communities whose stories we tell. The Light Bearers is not a company; it is a family.',
-  },
-]
+import { founder, team, coreValues, milestones } from '../data/team.js'
 
 export default function About() {
   return (
     <>
       <SEOHead
         title="About Us"
-        description="Meet the team behind The Light Bearers Film Production — young, vibrant creatives united by faith and a passion for authentic African storytelling."
+        description="The Light Bearers Film Production is a Christian film and creative production company committed to using storytelling to transform hearts and minds for Kingdom expansion."
         canonicalPath="/about"
       />
       <PageWrapper>
@@ -62,114 +39,208 @@ export default function About() {
                 id="about-hero-heading"
                 className="font-display font-black text-display-xl text-white mb-6 leading-none"
               >
-                Born from{' '}
-                <span className="text-gold-gradient">faith.</span>
-                <br />
-                Built on{' '}
-                <span className="text-gold-gradient">story.</span>
+                Carrying the{' '}
+                <span className="text-gold-gradient">Light.</span>
               </h1>
               <p className="text-text-muted text-lg leading-relaxed">
-                The Light Bearers Film Production is a creative film production company made up of
-                young, vibrant youths who believe that storytelling is one of the most powerful
-                forces for change in the world.
+                The Light Bearers Film Production is a Christian film and creative production
+                company committed to using the power of storytelling to transform hearts and
+                minds for Kingdom expansion.
               </p>
             </AnimatedSection>
           </div>
         </section>
 
-        {/* ── Our Story ── */}
-        <section className="section-padding bg-dark-surface" aria-labelledby="story-heading">
+        {/* ── Who We Are ── */}
+        <section className="section-padding bg-dark-surface" aria-labelledby="who-we-are-heading">
           <div className="container-site">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Text */}
               <div>
                 <SectionHeading
-                  eyebrow="The Beginning"
-                  title="Where we"
-                  titleAccent="come from"
+                  eyebrow="The Company"
+                  title="Who We"
+                  titleAccent="Are"
                   headingLevel={2}
                   className="mb-8"
                 />
                 <AnimatedSection delay={0.15}>
                   <div className="space-y-4 text-text-muted text-base leading-relaxed">
                     <p>
-                      The Light Bearers Film Production was founded by a group of passionate young
-                      creatives who saw a gap: African stories being told without African voices,
-                      youth narratives filtered through the lens of outsiders, and a generation of
-                      talented storytellers with no platform to amplify their work.
+                      We create films and visual stories that reflect God's love, truth and
+                      redemption, bringing faith into meaningful conversations about life,
+                      identity, struggle, relationships, culture and the human experience.
                     </p>
                     <p>
-                      We set out to change that. Armed with cameras, conviction, and an
-                      unshakeable belief in our calling, we began making films — small at first,
-                      but always ambitious, always intentional, always rooted in something real.
+                      We believe film is more than entertainment. It is a language, a vessel, and
+                      a meeting place — a way to carry truth into spaces where people live, think,
+                      question, struggle and dream.
                     </p>
                     <p>
-                      Today, The Light Bearers is a growing creative force producing films that
-                      travel across screens and across borders, carrying stories of faith, identity,
-                      resilience, and hope to audiences around the world.
+                      As a creative production company, we develop and produce films and other
+                      visual works while creating opportunities to train, equip and raise a
+                      generation of Christian filmmakers and storytellers who can use their craft
+                      with excellence and purpose.
+                    </p>
+                    <p>
+                      We are building beyond individual productions. Our vision is to grow into a
+                      creative ecosystem where film production, training, cinema, editing, music
+                      and other creative disciplines can come together to raise storytellers who
+                      carry the Light into their generation.
                     </p>
                   </div>
                 </AnimatedSection>
               </div>
 
-              {/* Quote card */}
-              <AnimatedSection delay={0.2} direction="right">
-                <div className="relative bg-dark rounded-lg border border-dark-border p-10">
-                  <div
-                    className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-gold/50"
-                    aria-hidden="true"
-                  />
-                  <div
-                    className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-gold/50"
-                    aria-hidden="true"
-                  />
-                  <p className="font-display italic text-white text-xl leading-relaxed mb-6">
-                    "We don't just tell stories. We carry light into dark places — and we do it by
-                    faith, not by what we can see."
+              {/* Vision & Mission cards */}
+              <AnimatedSection delay={0.2} direction="right" className="space-y-6">
+                <div className="bg-dark rounded-lg border border-dark-border p-8">
+                  <h3 className="font-heading font-bold text-gold text-xs tracking-widest uppercase mb-3 flex items-center gap-2">
+                    <span className="w-4 h-px bg-gold" aria-hidden="true" /> Vision
+                  </h3>
+                  <p className="font-display text-text-primary text-xl leading-relaxed">
+                    To be a beacon of Light, transforming lives for better communities.
                   </p>
-                  <div className="flex items-center gap-3">
-                    <div className="gold-line" aria-hidden="true" />
-                    <span className="font-heading font-semibold text-gold text-xs tracking-widest uppercase">
-                      The Light Bearers
-                    </span>
-                  </div>
+                </div>
+
+                <div className="bg-dark rounded-lg border border-dark-border p-8">
+                  <h3 className="font-heading font-bold text-gold text-xs tracking-widest uppercase mb-3 flex items-center gap-2">
+                    <span className="w-4 h-px bg-gold" aria-hidden="true" /> Mission
+                  </h3>
+                  <p className="font-display text-text-primary text-xl leading-relaxed">
+                    Transforming hearts and minds, reflecting on God's love, truth and redemption
+                    for Kingdom expansion.
+                  </p>
+                </div>
+
+                <div className="bg-dark rounded-lg border border-dark-border p-8">
+                  <h3 className="font-heading font-bold text-gold text-xs tracking-widest uppercase mb-3 flex items-center gap-2">
+                    <span className="w-4 h-px bg-gold" aria-hidden="true" /> The Name
+                  </h3>
+                  <p className="text-text-muted text-sm leading-relaxed mb-3">
+                    <strong className="text-text-primary">The Light Bearers</strong> refers to
+                    people who carry and proclaim the Light to the ends of the world — so that
+                    darkness shall not comprehend it.
+                  </p>
+                  <p className="text-gold/70 text-xs italic">
+                    "You cannot shine what you don't have."
+                  </p>
                 </div>
               </AnimatedSection>
             </div>
           </div>
         </section>
 
+        {/* ── Our Story (Founder Journey) ── */}
+        <section className="section-padding bg-dark" aria-labelledby="our-story-heading">
+          <div className="container-site">
+            <SectionHeading
+              eyebrow="The Beginning"
+              title="How It"
+              titleAccent="Started"
+              subtitle="From school drama to a calling that would become The Light Bearers Film Production."
+              headingLevel={2}
+              className="mb-12"
+            />
+            <div className="max-w-3xl mx-auto space-y-6 text-text-muted text-base leading-relaxed">
+              <AnimatedSection delay={0.1}>
+                <p>
+                  It began through school drama. In 2016, during a youth camp at GTHS Canada in
+                  Bamenda, Destel encountered Beautiful Feet Films and Drama Missions and watched
+                  a drama titled <em>"TOO LATE TO CRY."</em> That encounter set something in
+                  motion.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.15}>
+                <p>
+                  At first, the motivation was simple — to be seen, to act, to become a star, to
+                  be recognized on stage. It was performance for recognition.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.2}>
+                <p>
+                  Through several trainings and experiences — including church drama training, an
+                  Ordinary Course in Church Drama, and Advanced training in Church Drama in 2021 —
+                  his understanding began to shift.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.25}>
+                <p>
+                  In 2019, during a youth camp at FGBI, three questions turned everything upside
+                  down:
+                </p>
+                <blockquote className="my-6 pl-6 border-l-2 border-gold/40">
+                  <p className="text-text-primary italic mb-2">"What best can you do in my house?"</p>
+                  <p className="text-text-primary italic mb-2">"How can you serve me?"</p>
+                  <p className="text-text-primary italic">"What do I have?"</p>
+                </blockquote>
+                <p>
+                  Those questions led him to seriously reconsider his purpose. Acting and
+                  filmmaking were no longer about being seen — they were about service, calling
+                  and ministry.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.3}>
+                <p>
+                  He also noticed something that stayed with him: people could remember a film, a
+                  drama or a piece of music long after experiencing them, while they might
+                  struggle to remember a sermon heard the week before. What people <em>see</em>{' '}
+                  can stay with them. And what stays can change.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.35}>
+                <p>
+                  In 2022, another encounter brought the vision back strongly. The prompting
+                  eventually connected with Matthew 5:14 — <em>"You are the light of the world."</em>
+                </p>
+                <p className="mt-4">
+                  That scripture became the foundation. The Light Bearers Film Production was
+                  born.
+                </p>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
         {/* ── Core Values ── */}
-        <section className="section-padding bg-dark" aria-labelledby="values-heading">
+        <section className="section-padding bg-dark-surface" aria-labelledby="values-heading">
           <div className="container-site">
             <SectionHeading
               eyebrow="What Drives Us"
               title="Core"
               titleAccent="Values"
-              subtitle="Four principles that shape every decision we make, every story we tell."
+              subtitle="Six principles that shape every decision we make and every story we tell."
               align="center"
               headingLevel={2}
               className="mb-16"
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {values.map(({ title, description }, i) => (
-                <AnimatedSection key={title} delay={i * 0.1}>
-                  <div className="p-8 bg-dark-surface rounded border border-dark-border hover:border-gold/20 transition-colors duration-300 h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {coreValues.map((value, i) => (
+                <AnimatedSection key={value.number} delay={i * 0.08}>
+                  <div className="p-8 bg-dark rounded border border-dark-border hover:border-gold/20 transition-colors duration-300 h-full">
                     <div className="flex items-start gap-4 mb-4">
                       <span
                         className="font-display font-black text-4xl text-gold/15 leading-none select-none mt-1"
                         aria-hidden="true"
                       >
-                        {String(i + 1).padStart(2, '0')}
+                        {value.number}
                       </span>
                       <div>
                         <div className="gold-line mb-3" aria-hidden="true" />
-                        <h3 className="font-heading font-bold text-text-primary text-lg">
-                          {title}
+                        <h3 className="font-heading font-bold text-text-primary text-lg mb-2">
+                          {value.title}
                         </h3>
+                        {value.principle && (
+                          <p className="text-gold/70 text-xs italic mb-3">{value.principle}</p>
+                        )}
                       </div>
                     </div>
-                    <p className="text-text-muted text-sm leading-relaxed">{description}</p>
+                    <p className="text-text-muted text-sm leading-relaxed">{value.description}</p>
                   </div>
                 </AnimatedSection>
               ))}
@@ -177,62 +248,66 @@ export default function About() {
           </div>
         </section>
 
-        {/* ── The Team ── */}
-        <section className="section-padding bg-dark-surface" aria-labelledby="team-heading">
+        {/* ── The Founder ── */}
+        <section className="section-padding bg-dark" aria-labelledby="founder-heading">
           <div className="container-site">
             <SectionHeading
-              eyebrow="The People"
-              title="Meet the"
-              titleAccent="Team"
-              subtitle="The Light Bearers is powered by talented, passionate young creatives. Names and photos are placeholders — update with actual team bios."
-              align="center"
+              eyebrow="Leadership"
+              title="The"
+              titleAccent="Founder"
+              subtitle="Pefoufe Destel — the creative vision behind The Light Bearers Film Production."
               headingLevel={2}
-              className="mb-16"
+              className="mb-12"
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {team.map((member, i) => (
-                <AnimatedSection key={member.id} delay={i * 0.1}>
-                  <div className="group text-center">
-                    {/* Photo */}
-                    <div className="relative w-32 h-32 mx-auto mb-5 rounded-full overflow-hidden border-2 border-dark-border group-hover:border-gold/40 transition-colors duration-300">
-                      <img
-                        src={member.photo}
-                        alt={member.photoAlt}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                        onError={(e) => { e.currentTarget.style.display = 'none' }}
-                      />
-                      {/* Fallback avatar */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-dark-alt to-dark flex items-center justify-center">
-                        <span className="font-display font-bold text-2xl text-gold/40">
-                          {String(i + 1).padStart(2, '0')}
-                        </span>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+              {/* Photo */}
+              <AnimatedSection direction="left">
+                <div className="relative w-64 h-64 mx-auto rounded-lg overflow-hidden border-2 border-dark-border">
+                  <img
+                    src={founder.photo}
+                    alt={founder.photoAlt}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                    onError={(e) => { e.currentTarget.style.display = 'none' }}
+                  />
+                  {/* Fallback */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-dark-alt to-dark flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-20 h-20 rounded-full border-2 border-gold/30 flex items-center justify-center mx-auto mb-3">
+                        <span className="text-gold/50 text-2xl font-display font-bold">PD</span>
                       </div>
+                      <p className="text-text-subtle text-xs">Photo Coming Soon</p>
                     </div>
-                    <h3 className="font-heading font-semibold text-text-primary text-sm mb-1">
-                      {member.name}
-                    </h3>
-                    <p className="font-heading text-gold text-xs tracking-wide uppercase mb-3">
-                      {member.role}
-                    </p>
-                    <p className="text-text-subtle text-xs leading-relaxed max-w-xs mx-auto">
-                      {member.bio}
-                    </p>
                   </div>
-                </AnimatedSection>
-              ))}
+                </div>
+                <div className="text-center mt-6">
+                  <h3 className="font-heading font-bold text-text-primary text-xl mb-1">
+                    {founder.name}
+                  </h3>
+                  <p className="text-gold text-xs tracking-widest uppercase">{founder.role}</p>
+                </div>
+              </AnimatedSection>
+
+              {/* Bio */}
+              <AnimatedSection delay={0.15} direction="right" className="lg:col-span-2">
+                <div className="space-y-4 text-text-muted text-base leading-relaxed">
+                  {founder.bio.split('\n\n').map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
 
         {/* ── Milestones ── */}
-        <section className="section-padding bg-dark" aria-labelledby="milestones-heading">
+        <section className="section-padding bg-dark-surface" aria-labelledby="milestones-heading">
           <div className="container-site">
             <SectionHeading
               eyebrow="Our Journey"
-              title="Milestones &"
-              titleAccent="History"
-              subtitle="Key moments in the story of The Light Bearers. Replace placeholder years and events with actual company history."
+              title="Key"
+              titleAccent="Milestones"
+              subtitle="The moments that shaped The Light Bearers Film Production."
               headingLevel={2}
               className="mb-16"
             />
@@ -266,17 +341,53 @@ export default function About() {
           </div>
         </section>
 
+        {/* ── The Future ── */}
+        <section className="section-padding bg-dark border-t border-dark-border" aria-labelledby="future-heading">
+          <div className="container-site">
+            <div className="max-w-3xl mx-auto text-center">
+              <AnimatedSection>
+                <span className="inline-flex items-center gap-3 font-heading text-gold text-xs tracking-[0.3em] uppercase mb-6">
+                  <span className="gold-line" aria-hidden="true" />
+                  The Vision Ahead
+                  <span className="gold-line" aria-hidden="true" />
+                </span>
+                <h2
+                  id="future-heading"
+                  className="font-display font-bold text-display-md text-white mb-6"
+                >
+                  Building a creative{' '}
+                  <span className="text-gold-gradient">ecosystem.</span>
+                </h2>
+                <p className="text-text-muted text-base leading-relaxed mb-4">
+                  The goal is not merely to produce individual films. The larger vision is to
+                  build a creative ecosystem where filmmakers and creatives can be trained,
+                  equipped, discipled and given the infrastructure needed to create work that
+                  carries the Light.
+                </p>
+                <p className="text-text-muted text-base leading-relaxed mb-8">
+                  Future development may include a cinema hall, editing sector, music production
+                  and other creative infrastructure — all working together to raise a generation
+                  of storytellers who walk by faith.
+                </p>
+                <Link to="/services" className="btn-primary">
+                  See Our Services <ArrowRight size={15} aria-hidden="true" />
+                </Link>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ── */}
         <section className="section-padding bg-dark-surface border-t border-dark-border">
           <div className="container-site text-center">
             <AnimatedSection>
               <h2 className="font-display font-bold text-display-md text-white mb-4">
-                Ready to create something{' '}
-                <span className="text-gold-gradient">extraordinary?</span>
+                Want to be part of{' '}
+                <span className="text-gold-gradient">the story?</span>
               </h2>
               <p className="text-text-muted mb-8 max-w-xl mx-auto">
-                Whether you have a project in mind or simply want to connect, we're always open to
-                conversations with fellow storytellers.
+                Whether you have a project in mind or simply want to connect, we're always open
+                to conversations with fellow storytellers and Kingdom builders.
               </p>
               <Link to="/contact" className="btn-primary">
                 Get in Touch <ArrowRight size={15} aria-hidden="true" />

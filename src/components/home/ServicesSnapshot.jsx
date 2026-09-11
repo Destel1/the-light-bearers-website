@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Clapperboard, Film, Music, Users, ArrowRight } from 'lucide-react'
+import { Clapperboard, Users, PenLine, Theater, ArrowRight } from 'lucide-react'
 import AnimatedSection from '../shared/AnimatedSection.jsx'
 import SectionHeading from '../ui/SectionHeading.jsx'
 
@@ -7,22 +7,22 @@ const highlights = [
   {
     icon: Clapperboard,
     title: 'Film Production',
-    desc: 'Full-service production from development through post — short films, features, and web series.',
+    desc: "Developing and producing films that reflect God's love, truth and redemption for Kingdom expansion.",
   },
   {
-    icon: Film,
-    title: 'Documentary',
-    desc: 'Real stories told with artistry. Cultural explorations, personal narratives, and social documentaries.',
-  },
-  {
-    icon: Music,
-    title: 'Music Videos',
-    desc: 'Visually compelling music videos that amplify your message with cinematic quality.',
+    icon: Theater,
+    title: 'Drama Ministry',
+    desc: 'Creating dramatic works that communicate truth with impact — for church events, outreach and live presentations.',
   },
   {
     icon: Users,
-    title: 'Youth Workshops',
-    desc: 'Empowering the next generation with hands-on filmmaking skills and a platform to be heard.',
+    title: 'Creative Training',
+    desc: 'Equipping the next generation of Christian creatives to use their craft with excellence and Kingdom purpose.',
+  },
+  {
+    icon: PenLine,
+    title: 'Story Development',
+    desc: 'Developing stories with purpose — original screenplays, adaptations and narratives grounded in truth.',
   },
 ]
 
@@ -34,8 +34,8 @@ export default function ServicesSnapshot() {
           <SectionHeading
             eyebrow="What We Do"
             title="Our"
-            titleAccent="Services"
-            subtitle="From principal photography to youth empowerment — we cover every dimension of visual storytelling."
+            titleAccent="Work"
+            subtitle="From film production to creative training — we serve through every dimension of visual storytelling."
             headingLevel={2}
           />
           <AnimatedSection delay={0.2} className="flex-shrink-0">

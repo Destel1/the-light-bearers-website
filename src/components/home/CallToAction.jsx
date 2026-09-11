@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Film } from 'lucide-react'
+import { ArrowRight, Mail } from 'lucide-react'
 import AnimatedSection from '../shared/AnimatedSection.jsx'
 
 export default function CallToAction() {
@@ -39,32 +39,32 @@ export default function CallToAction() {
             id="cta-heading"
             className="font-display font-black text-display-lg text-white mb-6 max-w-3xl mx-auto leading-tight"
           >
-            Have a story that{' '}
-            <span className="text-gold-gradient">deserves to be seen?</span>
+            Have a story to tell for{' '}
+            <span className="text-gold-gradient">Kingdom impact?</span>
           </h2>
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
           <p className="text-text-muted text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
             Whether you're looking for a creative production partner, want to collaborate on a
-            film, or are interested in our youth storytelling workshops — we want to hear from you.
+            film, or are interested in our training programmes — we want to hear from you.
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={0.3}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/contact" className="btn-primary px-10 py-4">
-              Work With Us <ArrowRight size={15} aria-hidden="true" />
+              Get In Touch <ArrowRight size={15} aria-hidden="true" />
             </Link>
             <Link to="/services" className="btn-secondary px-10 py-4">
-              <Film size={15} aria-hidden="true" /> Our Services
+              <Mail size={15} aria-hidden="true" /> Our Services
             </Link>
           </div>
         </AnimatedSection>
 
         <AnimatedSection delay={0.4}>
           <p className="mt-8 font-display italic text-gold/50 text-sm">
-            "We Walk by Faith not by Sight."
+            "For we walk by faith, not by sight."
           </p>
         </AnimatedSection>
       </div>
