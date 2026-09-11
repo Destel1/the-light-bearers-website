@@ -38,7 +38,7 @@ export const films = [
     synopsis: 'When Noah, a Christian returnee, refuses to participate in his family\'s ancestral rites, his decision ignites a dangerous conflict between Christian faith, cultural tradition, family loyalty, and spiritual forces. As ancient customs collide with the Gospel, Noah and his family are forced to confront the consequences of their beliefs, their heritage, and the choices that define their destiny.',
     poster: '/images/films/last_rite_poster.jpg',
     posterAlt: 'THE LAST RITE — official poster',
-    trailer: null,
+    trailer: 'https://www.youtube.com/embed/ZujmGSLI8rU',
     gallery: [],
     awards: [],
     featured: true,
