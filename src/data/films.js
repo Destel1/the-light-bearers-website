@@ -24,32 +24,26 @@
  */
 
 export const films = [
-  // ─────────────────────────────────────────────
-  // ADD YOUR REAL PRODUCTIONS HERE.
-  // Each production should follow the schema above.
-  // Example structure (remove the comment markers and fill in real data):
-  //
-  // {
-  //   slug: 'your-film-title',
-  //   title: 'Your Film Title',
-  //   tagline: 'Your tagline here.',
-  //   type: 'Short Film',
-  //   genre: ['Drama', 'Faith'],
-  //   year: 2024,
-  //   duration: '24 min',
-  //   director: 'Pefoufe Destel',
-  //   producer: 'Pefoufe Destel',
-  //   cast: [],
-  //   synopsis: 'Your synopsis here.',
-  //   poster: '/images/films/your-film-poster.jpg',
-  //   posterAlt: 'Your Film Title — official poster',
-  //   trailer: null,
-  //   gallery: [],
-  //   awards: [],
-  //   featured: true,
-  //   status: 'completed',
-  // },
-  // ─────────────────────────────────────────────
+  {
+    slug: 'the-last-rite',
+    title: 'THE LAST RITE',
+    tagline: 'When Christianity Meets Tradition',
+    type: 'Feature',
+    genre: ['Drama', 'Supernatural', 'Faith-Based Thriller'],
+    year: 2026,
+    duration: '46 min',
+    director: 'Pefoufe Destel',
+    producer: 'AZISEH BLESSING / THE LIGHT BEARERS FILM PRODUCTION',
+    cast: [],
+    synopsis: 'When Noah, a Christian returnee, refuses to participate in his family\'s ancestral rites, his decision ignites a dangerous conflict between Christian faith, cultural tradition, family loyalty, and spiritual forces. As ancient customs collide with the Gospel, Noah and his family are forced to confront the consequences of their beliefs, their heritage, and the choices that define their destiny.',
+    poster: '/images/films/last_rite_poster.jpg',
+    posterAlt: 'THE LAST RITE — official poster',
+    trailer: null,
+    gallery: [],
+    awards: [],
+    featured: true,
+    status: 'completed',
+  },
 ]
 
 export const filmTypes = ['All', 'Short Film', 'Feature', 'Documentary', 'Music Video', 'Drama']

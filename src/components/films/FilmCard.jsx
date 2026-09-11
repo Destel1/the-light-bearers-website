@@ -22,37 +22,23 @@ export default function FilmCard({ film, featured = false }) {
           src={poster}
           alt={posterAlt || `${title} poster`}
           loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-700 ease-cinematic group-hover:scale-105"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none'
-          }}
+          className="w-full h-full object-cover transition-transform duration-700 ease-cinematic group-hover:scale-105 relative z-10"
         />
-        {/* Fallback gradient when image missing */}
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-alt via-dark-surface to-dark flex items-center justify-center">
-          <div className="text-center px-4">
-            <div className="w-12 h-12 rounded-full border-2 border-gold/30 flex items-center justify-center mx-auto mb-3">
-              <span className="text-gold/50 text-lg font-display font-bold">
-                {title.charAt(0)}
-              </span>
-            </div>
-            <p className="text-text-subtle text-xs font-heading tracking-wide">Poster Coming Soon</p>
-          </div>
-        </div>
 
         {/* Status badge for in-production */}
         {status === 'in-production' && (
-          <div className="absolute top-3 left-3">
+          <div className="absolute top-3 left-3 z-20">
             <Badge variant="status">In Production</Badge>
           </div>
         )}
 
         {/* Type badge */}
-        <div className={`absolute top-3 ${status === 'in-production' ? 'right-3' : 'right-3'}`}>
+        <div className={`absolute top-3 right-3 z-20`}>
           <Badge variant="gold">{type}</Badge>
         </div>
 
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/40 transition-all duration-500 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100">
+        <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/40 transition-all duration-500 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100 z-20">
           <span className="flex items-center gap-1.5 text-gold text-xs font-heading font-semibold tracking-wide">
             View Film <ArrowRight size={13} />
           </span>

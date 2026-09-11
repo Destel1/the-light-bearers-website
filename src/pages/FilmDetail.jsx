@@ -62,14 +62,8 @@ export default function FilmDetail() {
                     <img
                       src={film.poster}
                       alt={film.posterAlt || `${film.title} poster`}
-                      className="w-full h-full object-cover"
-                      onError={(e) => { e.currentTarget.style.display = 'none' }}
+                      className="w-full h-full object-cover relative z-10"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-dark-alt to-dark flex items-center justify-center">
-                      <span className="font-display font-black text-5xl text-gold/20">
-                        {film.title.charAt(0)}
-                      </span>
-                    </div>
                   </div>
                 </div>
               </AnimatedSection>
